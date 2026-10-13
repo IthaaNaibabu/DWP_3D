@@ -1,10 +1,9 @@
 const form = document.getElementById("formkontak");
 
 form.addEventListener("submit", function(event) {
-
     event.preventDefault();
 
-    const nomorWhatsApp = "6281339181944";
+    const nomorWhatsApp = "6282244556677"; // NOMOR KAMU
 
     const nama = document.getElementById("nama").value;
     const email = document.getElementById("email").value;
@@ -12,7 +11,12 @@ form.addEventListener("submit", function(event) {
     const minat = document.getElementById("minat").value;
     const pesan = document.getElementById("pesan").value;
 
-    const isiPesan = `Halo, saya menghubungi melalui website CV.
+    if (nama === "" || pesan === "") {
+        alert("Nama dan Pesan wajib diisi!");
+        return;
+    }
+
+    const isiPesan = `Halo, saya menghubungi melalui website
 
 Nama Lengkap : ${nama}
 Email        : ${email}
@@ -23,9 +27,7 @@ Pesan :
 ${pesan}`;
 
     const pesanEncoded = encodeURIComponent(isiPesan);
+    const urlWhatsApp = `https://api.whatsapp.com/send?phone=${nomorWhatsApp}&text=${pesanEncoded}`;
 
-    const urlWhatsApp =
-        `https://web.whatsapp.com/send?phone=${nomorWhatsApp}&text=${pesanEncoded}`;
- 
-    window.open(urlWhatsApp, "_blank");
+    window.location.href = urlWhatsApp;
 });
