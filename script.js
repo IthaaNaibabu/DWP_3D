@@ -1,12 +1,12 @@
-const form = document.getElementById("formkontak");
+const form = document.getElementById("formKontak");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault();
 
-    const nomorWhatsApp = "6282244556677"; // NOMOR KAMU
+    const nomorWhatsApp = "6281339181944";
 
     const nama = document.getElementById("nama").value;
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("e-mail").value;
     const telepon = document.getElementById("telepon").value;
     const minat = document.getElementById("minat").value;
     const pesan = document.getElementById("pesan").value;
@@ -16,11 +16,11 @@ form.addEventListener("submit", function(event) {
         return;
     }
 
-    const isiPesan = `Halo, saya menghubungi melalui website
+    const isiPesan = `Halo, saya menghubungi melalui website CV
 
 Nama Lengkap : ${nama}
-Email        : ${email}
-No. Telepon  : ${telepon}
+Email : ${email}
+No. Telepon : ${telepon}
 Bidang Minat : ${minat}
 
 Pesan :
