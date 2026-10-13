@@ -117,3 +117,46 @@ button{width:100%;margin-bottom:10px}
 </div>
 </body>
 </html>
+<h2>Target dan Cita-Cita</h2>
+<p>Target saya selama menempuh pendidikan di Program Studi Teknologi Informasi adalah menjadi Web Developer yang profesional dan mampu berkontribusi dalam dunia teknologi.</p>
+
+<h2>Form Kontak</h2>
+<form id="formKontak">
+<label>Nama Lengkap</label>
+<input type="text" id="nama" required>
+<label>Email</label>
+<input type="email" id="e-mail" required>
+<label>No. Telepon</label>
+<input type="tel" id="telepon">
+<label>Bidang Minat</label>
+<select id="minat">
+<option>Web Developer</option>
+<option>UI/UX Design</option>
+<option>Jaringan Komputer</option>
+<option>Data Analisis</option>
+</select>
+<label>Pesan</label>
+<textarea id="pesan" rows="4" required></textarea>
+<br><br>
+<button type="submit">Kirim ke WhatsApp</button>
+<button type="reset">Reset</button>
+</form>
+
+<div class="footer"><p>&copy; 2026 Maria Roswita Naibabu - 51250089</p></div>
+</div>
+
+<script>
+const form=document.getElementById("formKontak");
+form.addEventListener("submit",function(e){
+e.preventDefault();
+const nomorWA="6281339181944";
+const nama=document.getElementById("nama").value;
+const email=document.getElementById("e-mail").value;
+const telepon=document.getElementById("telepon").value;
+const minat=document.getElementById("minat").value;
+const pesan=document.getElementById("pesan").value;
+if(nama===""||pesan===""){alert("Nama dan Pesan wajib diisi!");return;}
+const isi=`Halo, saya hubungi via CV Website\n\nNama: ${nama}\nEmail: ${email}\nTelepon: ${telepon}\nMinat: ${minat}\n\nPesan:\n${pesan}`;
+window.location.href="https://api.whatsapp.com/send?phone="+nomorWA+"&text="+encodeURIComponent(isi);
+});
+</script>
