@@ -7,7 +7,7 @@
 <style>
 *{box-sizing:border-box}
 body{background:royalblue;font-family:Arial,sans-serif;margin:0;padding:0}
-.container{width:80%;max-width:1000px;margin:30px auto;padding:30px;background:#fff;border-radius:8px}
+.container{width:80%;max-width:1000px;margin:30px auto;padding:30px;background:#fff}
 h1{color:darkcyan;text-align:center;margin-top:0}
 h2{color:darkred;border-bottom:2px solid #eee;padding-bottom:5px;margin-top:35px}
 table{border-collapse:collapse}
@@ -18,20 +18,17 @@ table{border-collapse:collapse}
 .tabel-matkul{width:100%;margin-top:10px}
 .tabel-matkul th, .tabel-matkul td{border:1px solid #ccc;padding:8px;text-align:left;font-size:14px}
 .tabel-matkul th{background:#00509e;color:#fff}
-form{background:#f1f5f9;padding:20px;margin-top:20px;border:1px solid #ccc;border-radius:8px}
+form{background:#f1f5f9;padding:20px;margin-top:20px;border:1px solid #ccc}
 label{display:block;font-weight:bold;margin:12px 0 5px}
-input,select,textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:5px}
-button{background:#00509e;color:#fff;padding:10px 20px;border:none;margin-right:10px;cursor:pointer;border-radius:5px}
+input,select,textarea{width:100%;padding:10px;border:1px solid #ccc}
+button{background:#00509e;color:#fff;padding:10px 20px;border:none;margin-right:10px;cursor:pointer}
 button:hover{background:#003366}
 .footer{text-align:center;color:#666;margin-top:30px;border-top:1px solid #ddd;padding-top:15px}
-.grid-informasi{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px}
-.card{background:#fff8fb;padding:20px;border:1px solid #ddd;border-left:5px solid darkred;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.1)}
 @media(max-width:768px){
 .container{width:94%;margin:10px auto;padding:15px}
 .identitas,.identitas tbody,.identitas tr,.identitas td{display:block;width:100%}
 .kolom-foto{width:100%;padding:0;text-align:center;margin-bottom:20px}
 .foto-profil{width:160px;margin:0 auto}
-.grid-informasi{grid-template-columns:1fr}
 button{width:100%;margin-bottom:10px}
 }
 </style>
@@ -41,56 +38,29 @@ button{width:100%;margin-bottom:10px}
 <h1>Curriculum Vitae</h1>
 <table class="identitas">
 <tr>
-<td class="kolom-foto"><img src="image/foto%20profil.jpg" class="foto-profil" alt="Foto Profil"></td>
+<img src="image/foto%20profil.jpg" class="foto-profil" alt="Foto Profil">
 <td>
 <h3 style="margin-top:0">Identitas Diri</h3>
 <table class="tabel-identitas">
 <tr><td><b>Nama Lengkap</b></td><td>: Maria Roswita Naibabu</td></tr>
 <tr><td><b>NIM</b></td><td>: 51250089</td></tr>
 <tr><td><b>Program Studi</b></td><td>: Teknologi Informasi</td></tr>
-<tr><td><b>Tempat, Tgl Lahir</b></td><td>: Tuamau, 08 Mei 2006</td></tr>
+<tr><td><b>Tempat, Tanggal Lahir</b></td><td>: Tuamau, 08 Mei 2006</td></tr>
 <tr><td><b>Alamat</b></td><td>: Tuamau</td></tr>
 <tr><td><b>No. HP</b></td><td>: 08xxxxxxxxxx</td></tr>
 </table>
 </td>
 </tr>
 </table>
-
 <h2>Profil Singkat</h2>
 <p>Saya adalah mahasiswa Program Studi Teknologi Informasi Universitas Timor. Saya memiliki ketertarikan terhadap perkembangan teknologi, khususnya dalam bidang <mark>Web Development</mark>. Saya memiliki motivasi untuk terus belajar dan mengembangkan kemampuan dalam bidang teknologi informasi agar dapat memberikan manfaat bagi masyarakat.</p>
-
-<div class="grid-informasi">
-  <div class="card">
-    <h2 style="margin-top:0;border:none">Riwayat Pendidikan</h2>
-    <ol>
-      <li>SDN Tuamau</li>
-      <li>SMP N Nunufafi</li>
-      <li>SMK Tuamau</li>
-      <li>S1 Universitas Timor</li>
-    </ol>
-  </div>
-  <div class="card">
-    <h2 style="margin-top:0;border:none">Hobi</h2>
-    <ul>
-      <li>Menonton</li>
-      <li>Membaca</li>
-      <li>Jalan-jalan</li>
-      <li>Belajar</li>
-    </ul>
-  </div>
-  <div class="card">
-    <h2 style="margin-top:0;border:none">Bidang Minat</h2>
-    <ul>
-      <li>Web Developer</li>
-      <li>UI/UX Design</li>
-      <li>Jaringan Komputer</li>
-      <li>Data Analisis</li>
-    </ul>
-  </div>
-</div>
-
+<h2>Riwayat Pendidikan</h2>
+<ol><li>SDN Tuamau</li><li>SMP N Nunufafi</li><li>SMK Tuamau</li><li>S1 Universitas Timor</li></ol>
+<h2>Hobi</h2>
+<ul><li>Menonton</li><li>Membaca</li><li>Jalan-jalan</li><li>Belajar</li></ul>
+<h2>Bidang Minat</h2>
+<ul><li>Web Developer</li><li>UI/UX Design</li><li>Jaringan Komputer</li><li>Data Analisis</li></ul>
 <p>Bidang yang paling saya minati adalah <b>Web Developer</b> karena saya ingin mampu membuat website yang menarik, informatif, dan bermanfaat.</p>
-
 <h2>Mata Kuliah Semester Ini</h2>
 <table class="tabel-matkul">
 <tr><th>No.</th><th>Kode MK</th><th>Nama Mata Kuliah</th><th>SKS</th></tr>
@@ -98,25 +68,20 @@ button{width:100%;margin-bottom:10px}
 <tr><td>2</td><td>TI202</td><td>Basis Data</td><td>3</td></tr>
 <tr><td>3</td><td>TI203</td><td>Organisasi dan Arsitektur Komputer</td><td>3</td></tr>
 </table>
-
 <h2>Target dan Cita-Cita</h2>
 <p>Target saya selama menempuh pendidikan di Program Studi Teknologi Informasi adalah menjadi Web Developer yang profesional dan mampu berkontribusi dalam dunia teknologi.</p>
-
 <h2>Form Kontak</h2>
 <form id="formKontak">
 <label>Nama Lengkap</label><input type="text" id="nama" required>
 <label>Email</label><input type="email" id="e-mail" required>
 <label>No. Telepon</label><input type="tel" id="telepon">
-<label>Bidang Minat</label>
-<select id="minat"><option>Web Developer</option><option>UI/UX Design</option><option>Jaringan Komputer</option><option>Data Analisis</option></select>
+<label>Bidang Minat</label><select id="minat"><option>Web Developer</option><option>UI/UX Design</option><option>Jaringan Komputer</option><option>Data Analisis</option></select>
 <label>Pesan</label><textarea id="pesan" rows="4" required></textarea>
 <br><br>
 <button type="submit">Kirim ke WhatsApp</button><button type="reset">Reset</button>
 </form>
-
 <div class="footer"><p>&copy; 2026 Maria Roswita Naibabu - 51250089</p></div>
 </div>
-
 <script>
 const form=document.getElementById("formKontak");
 form.addEventListener("submit",function(e){
